@@ -1,0 +1,118 @@
+===============================================================================
+                                     CVXPY                                     
+                                     v1.4.2                                    
+===============================================================================
+(CVXPY) Mar 25 10:23:28 PM: Your problem has 201000 variables, 9 constraints, and 0 parameters.
+(CVXPY) Mar 25 10:23:28 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 25 10:23:28 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 25 10:23:28 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+(CVXPY) Mar 25 10:23:28 PM: Your problem is compiled with the CPP canonicalization backend.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 25 10:23:28 PM: Compiling problem (target solver=MOSEK).
+(CVXPY) Mar 25 10:23:28 PM: Reduction chain: FlipObjective -> Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Mar 25 10:23:28 PM: Applying reduction FlipObjective
+(CVXPY) Mar 25 10:23:28 PM: Applying reduction Dcp2Cone
+(CVXPY) Mar 25 10:23:28 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 25 10:23:28 PM: Applying reduction ConeMatrixStuffing
+(CVXPY) Mar 25 10:23:29 PM: Applying reduction MOSEK
+(CVXPY) Mar 25 10:23:29 PM: Finished problem compilation (took 9.903e-01 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 25 10:23:29 PM: Invoking solver MOSEK  to obtain a solution.
+
+
+(CVXPY) Mar 25 10:23:29 PM: Problem
+(CVXPY) Mar 25 10:23:29 PM:   Name                   :                 
+(CVXPY) Mar 25 10:23:29 PM:   Objective sense        : minimize        
+(CVXPY) Mar 25 10:23:29 PM:   Type                   : LO (linear optimization problem)
+(CVXPY) Mar 25 10:23:29 PM:   Constraints            : 210406          
+(CVXPY) Mar 25 10:23:29 PM:   Affine conic cons.     : 0               
+(CVXPY) Mar 25 10:23:29 PM:   Disjunctive cons.      : 0               
+(CVXPY) Mar 25 10:23:29 PM:   Cones                  : 0               
+(CVXPY) Mar 25 10:23:29 PM:   Scalar variables       : 202000          
+(CVXPY) Mar 25 10:23:29 PM:   Matrix variables       : 0               
+(CVXPY) Mar 25 10:23:29 PM:   Integer variables      : 201000          
+(CVXPY) Mar 25 10:23:29 PM: 
+(CVXPY) Mar 25 10:23:29 PM: Optimizer started.
+(CVXPY) Mar 25 10:23:30 PM: Mixed integer optimizer started.
+(CVXPY) Mar 25 10:23:30 PM: Threads used: 4
+(CVXPY) Mar 25 10:23:30 PM: Presolve started.
+(CVXPY) Mar 25 10:23:32 PM: Presolve terminated. Time = 1.97, probing time =  0.06
+(CVXPY) Mar 25 10:23:32 PM: Presolved problem: 101024 variables, 8206 constraints, 603144 non-zeros
+(CVXPY) Mar 25 10:23:32 PM: Presolved problem: 0 general integer, 101024 binary, 0 continuous
+(CVXPY) Mar 25 10:23:32 PM: Clique table size: 105024
+(CVXPY) Mar 25 10:23:32 PM: Symmetry factor  : 0.00 (detection time = 0.08)
+(CVXPY) Mar 25 10:23:32 PM: BRANCHES RELAXS   ACT_NDS  DEPTH    BEST_INT_OBJ         BEST_RELAX_OBJ       REL_GAP(%)  TIME  
+(CVXPY) Mar 25 10:23:35 PM: 0        1        1        0        NA                   4.1456541171e+00     NA          5.5   
+(CVXPY) Mar 25 10:23:36 PM: 0        1        1        0        1.0525942581e+01     4.1456541171e+00     60.61       6.4   
+(CVXPY) Mar 25 10:23:36 PM: Cut generation started.
+(CVXPY) Mar 25 10:23:39 PM: 0        1        1        0        1.0525942581e+01     4.1456541171e+00     60.61       9.9   
+(CVXPY) Mar 25 10:23:43 PM: 0        2        1        0        1.0525942581e+01     4.2221444566e+00     59.89       13.8  
+(CVXPY) Mar 25 10:23:48 PM: 0        3        1        0        1.0525942581e+01     4.2880658481e+00     59.26       19.0  
+(CVXPY) Mar 25 10:23:55 PM: 0        4        1        0        1.0525942581e+01     4.3630264245e+00     58.55       25.4  
+(CVXPY) Mar 25 10:24:02 PM: 0        5        1        0        1.0525942581e+01     4.4258959673e+00     57.95       32.6  
+(CVXPY) Mar 25 10:24:12 PM: 0        6        1        0        1.0525942581e+01     4.4710661359e+00     57.52       43.0  
+(CVXPY) Mar 25 10:24:19 PM: 0        7        1        0        1.0525942581e+01     4.5247625045e+00     57.01       49.1  
+(CVXPY) Mar 25 10:24:25 PM: 0        8        1        0        1.0525942581e+01     4.5860582536e+00     56.43       55.2  
+(CVXPY) Mar 25 10:24:31 PM: 0        9        1        0        1.0525942581e+01     4.6572483019e+00     55.75       61.4  
+(CVXPY) Mar 25 10:24:36 PM: 0        10       1        0        1.0525942581e+01     4.7114590001e+00     55.24       66.3  
+(CVXPY) Mar 25 10:24:42 PM: 0        11       1        0        1.0525942581e+01     4.7638113460e+00     54.74       72.3  
+(CVXPY) Mar 25 10:24:44 PM: 0        12       1        0        1.0525942581e+01     4.8185557245e+00     54.22       74.0  
+(CVXPY) Mar 25 10:24:45 PM: 0        13       1        0        1.0525942581e+01     4.8705249557e+00     53.73       75.6  
+(CVXPY) Mar 25 10:24:47 PM: 0        14       1        0        1.0525942581e+01     4.9240629405e+00     53.22       77.6  
+(CVXPY) Mar 25 10:24:49 PM: 0        15       1        0        1.0525942581e+01     4.9941550939e+00     52.55       79.9  
+(CVXPY) Mar 25 10:24:52 PM: 0        16       1        0        1.0525942581e+01     5.0552903359e+00     51.97       82.2  
+(CVXPY) Mar 25 10:24:54 PM: 0        17       1        0        1.0525942581e+01     5.1025082560e+00     51.52       84.4  
+(CVXPY) Mar 25 10:24:56 PM: 0        18       1        0        1.0525942581e+01     5.1675181416e+00     50.91       86.8  
+(CVXPY) Mar 25 10:24:59 PM: 0        19       1        0        1.0525942581e+01     5.2210069952e+00     50.40       89.4  
+(CVXPY) Mar 25 10:25:01 PM: 0        20       1        0        1.0525942581e+01     5.2688195176e+00     49.94       91.9  
+(CVXPY) Mar 25 10:25:04 PM: 0        21       1        0        1.0525942581e+01     5.3188587578e+00     49.47       94.3  
+(CVXPY) Mar 25 10:25:06 PM: 0        22       1        0        1.0525942581e+01     5.3769474408e+00     48.92       96.6  
+(CVXPY) Mar 25 10:25:10 PM: 0        23       1        0        1.0525942581e+01     5.4419480179e+00     48.30       100.1 
+(CVXPY) Mar 25 10:25:13 PM: 0        24       1        0        1.0525942581e+01     5.4975140127e+00     47.77       103.5 
+(CVXPY) Mar 25 10:25:17 PM: 0        25       1        0        1.0525942581e+01     5.5656911411e+00     47.12       107.8 
+(CVXPY) Mar 25 10:25:21 PM: 0        26       1        0        1.0525942581e+01     5.6433318793e+00     46.39       111.1 
+(CVXPY) Mar 25 10:25:25 PM: 0        27       1        0        1.0525942581e+01     5.7302163457e+00     45.56       115.6 
+(CVXPY) Mar 25 10:25:28 PM: 0        28       1        0        1.0525942581e+01     7.5873756729e+00     27.92       118.1 
+(CVXPY) Mar 25 10:25:30 PM: 0        29       1        0        1.0525942581e+01     9.6741662248e+00     8.09        120.2 
+(CVXPY) Mar 25 10:25:31 PM: Cut generation terminated. Time = 72.14
+(CVXPY) Mar 25 10:25:31 PM: 0        31       1        0        1.0061162935e+01     1.0061162935e+01     0.00e+00    121.3 
+(CVXPY) Mar 25 10:25:31 PM: An optimal solution satisfying the relative gap tolerance of 1.00e-02(%) has been located.
+(CVXPY) Mar 25 10:25:31 PM: The relative gap is 0.00e+00(%).
+(CVXPY) Mar 25 10:25:31 PM: An optimal solution satisfying the absolute gap tolerance of 0.00e+00 has been located.
+(CVXPY) Mar 25 10:25:31 PM: The absolute gap is 0.00e+00.
+(CVXPY) Mar 25 10:25:31 PM: 
+(CVXPY) Mar 25 10:25:31 PM: Objective of best integer solution : 1.006116293534e+01      
+(CVXPY) Mar 25 10:25:31 PM: Best objective bound               : 1.006116293534e+01      
+(CVXPY) Mar 25 10:25:31 PM: Initial feasible solution objective: Undefined
+(CVXPY) Mar 25 10:25:31 PM: Construct solution objective       : Not employed
+(CVXPY) Mar 25 10:25:31 PM: User objective cut value           : Not employed
+(CVXPY) Mar 25 10:25:31 PM: Number of cuts generated           : 5197
+(CVXPY) Mar 25 10:25:31 PM:   Number of Gomory cuts            : 1062
+(CVXPY) Mar 25 10:25:31 PM:   Number of CMIR cuts              : 1079
+(CVXPY) Mar 25 10:25:31 PM:   Number of clique cuts            : 2331
+(CVXPY) Mar 25 10:25:31 PM:   Number of knapsack_cover cuts    : 725
+(CVXPY) Mar 25 10:25:31 PM: Number of branches                 : 0
+(CVXPY) Mar 25 10:25:31 PM: Number of relaxations solved       : 31
+(CVXPY) Mar 25 10:25:31 PM: Number of interior point iterations: 32
+(CVXPY) Mar 25 10:25:31 PM: Number of simplex iterations       : 48078
+(CVXPY) Mar 25 10:25:31 PM: Time spend presolving the root     : 1.97
+(CVXPY) Mar 25 10:25:31 PM: Time spend optimizing the root     : 2.99
+(CVXPY) Mar 25 10:25:31 PM: Mixed integer optimizer terminated. Time: 121.28
+(CVXPY) Mar 25 10:25:31 PM: Optimizer terminated. Time: 121.33  
+(CVXPY) Mar 25 10:25:31 PM: 
+(CVXPY) Mar 25 10:25:31 PM: 
+(CVXPY) Mar 25 10:25:31 PM: Integer solution solution summary
+(CVXPY) Mar 25 10:25:31 PM:   Problem status  : PRIMAL_FEASIBLE
+(CVXPY) Mar 25 10:25:31 PM:   Solution status : INTEGER_OPTIMAL
+(CVXPY) Mar 25 10:25:31 PM:   Primal.  obj: 1.0061162935e+01    nrm: 3e+02    Viol.  con: 8e-12    var: 6e-12    itg: 7e-12  
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 25 10:25:31 PM: Problem status: optimal
+(CVXPY) Mar 25 10:25:31 PM: Optimal value: -1.006e+01
+(CVXPY) Mar 25 10:25:31 PM: Compilation took 9.903e-01 seconds
+(CVXPY) Mar 25 10:25:31 PM: Solver (including time spent in interface) took 1.217e+02 seconds

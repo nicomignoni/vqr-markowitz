@@ -1,0 +1,82 @@
+===============================================================================
+                                     CVXPY                                     
+                                     v1.4.2                                    
+===============================================================================
+(CVXPY) Mar 25 08:24:54 PM: Your problem has 201000 variables, 8 constraints, and 0 parameters.
+(CVXPY) Mar 25 08:24:54 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 25 08:24:54 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 25 08:24:54 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+(CVXPY) Mar 25 08:24:54 PM: Your problem is compiled with the CPP canonicalization backend.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 25 08:24:54 PM: Compiling problem (target solver=MOSEK).
+(CVXPY) Mar 25 08:24:54 PM: Reduction chain: FlipObjective -> Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Mar 25 08:24:54 PM: Applying reduction FlipObjective
+(CVXPY) Mar 25 08:24:54 PM: Applying reduction Dcp2Cone
+(CVXPY) Mar 25 08:24:54 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 25 08:24:54 PM: Applying reduction ConeMatrixStuffing
+(CVXPY) Mar 25 08:24:54 PM: Applying reduction MOSEK
+(CVXPY) Mar 25 08:24:54 PM: Finished problem compilation (took 9.638e-01 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 25 08:24:54 PM: Invoking solver MOSEK  to obtain a solution.
+
+
+(CVXPY) Mar 25 08:24:55 PM: Problem
+(CVXPY) Mar 25 08:24:55 PM:   Name                   :                 
+(CVXPY) Mar 25 08:24:55 PM:   Objective sense        : minimize        
+(CVXPY) Mar 25 08:24:55 PM:   Type                   : LO (linear optimization problem)
+(CVXPY) Mar 25 08:24:55 PM:   Constraints            : 208405          
+(CVXPY) Mar 25 08:24:55 PM:   Affine conic cons.     : 0               
+(CVXPY) Mar 25 08:24:55 PM:   Disjunctive cons.      : 0               
+(CVXPY) Mar 25 08:24:55 PM:   Cones                  : 0               
+(CVXPY) Mar 25 08:24:55 PM:   Scalar variables       : 201000          
+(CVXPY) Mar 25 08:24:55 PM:   Matrix variables       : 0               
+(CVXPY) Mar 25 08:24:55 PM:   Integer variables      : 201000          
+(CVXPY) Mar 25 08:24:55 PM: 
+(CVXPY) Mar 25 08:24:55 PM: Optimizer started.
+(CVXPY) Mar 25 08:24:55 PM: Mixed integer optimizer started.
+(CVXPY) Mar 25 08:24:55 PM: Threads used: 4
+(CVXPY) Mar 25 08:24:55 PM: Presolve started.
+(CVXPY) Mar 25 08:24:57 PM: Presolve terminated. Time = 1.97, probing time =  0.05
+(CVXPY) Mar 25 08:24:57 PM: Presolved problem: 100778 variables, 8205 constraints, 600668 non-zeros
+(CVXPY) Mar 25 08:24:57 PM: Presolved problem: 0 general integer, 100778 binary, 0 continuous
+(CVXPY) Mar 25 08:24:57 PM: Clique table size: 104778
+(CVXPY) Mar 25 08:24:57 PM: Symmetry factor  : 0.00 (detection time = 0.08)
+(CVXPY) Mar 25 08:24:57 PM: BRANCHES RELAXS   ACT_NDS  DEPTH    BEST_INT_OBJ         BEST_RELAX_OBJ       REL_GAP(%)  TIME  
+(CVXPY) Mar 25 08:24:58 PM: 0        1        1        0        NA                   -4.1300000000e+02    NA          3.6   
+(CVXPY) Mar 25 08:24:59 PM: 0        1        1        0        -4.1300000000e+02    -4.1300000000e+02    0.00e+00    4.4   
+(CVXPY) Mar 25 08:24:59 PM: An optimal solution satisfying the relative gap tolerance of 1.00e-02(%) has been located.
+(CVXPY) Mar 25 08:24:59 PM: The relative gap is 0.00e+00(%).
+(CVXPY) Mar 25 08:24:59 PM: An optimal solution satisfying the absolute gap tolerance of 0.00e+00 has been located.
+(CVXPY) Mar 25 08:24:59 PM: The absolute gap is 0.00e+00.
+(CVXPY) Mar 25 08:24:59 PM: 
+(CVXPY) Mar 25 08:24:59 PM: Objective of best integer solution : -4.130000000000e+02     
+(CVXPY) Mar 25 08:24:59 PM: Best objective bound               : -4.130000000000e+02     
+(CVXPY) Mar 25 08:24:59 PM: Initial feasible solution objective: Undefined
+(CVXPY) Mar 25 08:24:59 PM: Construct solution objective       : Not employed
+(CVXPY) Mar 25 08:24:59 PM: User objective cut value           : Not employed
+(CVXPY) Mar 25 08:24:59 PM: Number of cuts generated           : 0
+(CVXPY) Mar 25 08:24:59 PM: Number of branches                 : 0
+(CVXPY) Mar 25 08:24:59 PM: Number of relaxations solved       : 1
+(CVXPY) Mar 25 08:24:59 PM: Number of interior point iterations: 8
+(CVXPY) Mar 25 08:24:59 PM: Number of simplex iterations       : 0
+(CVXPY) Mar 25 08:24:59 PM: Time spend presolving the root     : 1.97
+(CVXPY) Mar 25 08:24:59 PM: Time spend optimizing the root     : 1.06
+(CVXPY) Mar 25 08:24:59 PM: Mixed integer optimizer terminated. Time: 4.43
+(CVXPY) Mar 25 08:24:59 PM: Optimizer terminated. Time: 4.48    
+(CVXPY) Mar 25 08:24:59 PM: 
+(CVXPY) Mar 25 08:24:59 PM: 
+(CVXPY) Mar 25 08:24:59 PM: Integer solution solution summary
+(CVXPY) Mar 25 08:24:59 PM:   Problem status  : PRIMAL_FEASIBLE
+(CVXPY) Mar 25 08:24:59 PM:   Solution status : INTEGER_OPTIMAL
+(CVXPY) Mar 25 08:24:59 PM:   Primal.  obj: -4.1300000000e+02   nrm: 1e+02    Viol.  con: 2e-15    var: 1e-15    itg: 2e-15  
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 25 08:24:59 PM: Problem status: optimal
+(CVXPY) Mar 25 08:24:59 PM: Optimal value: 4.130e+02
+(CVXPY) Mar 25 08:24:59 PM: Compilation took 9.638e-01 seconds
+(CVXPY) Mar 25 08:24:59 PM: Solver (including time spent in interface) took 4.788e+00 seconds
